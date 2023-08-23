@@ -64,7 +64,6 @@ main > ul > li {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  max-width: 400px;
 }
 main > ul > li:hover {
   background-color: #ccc;
