@@ -1,111 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <title>Curve Docs</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curve Knowledge Hub</title>
+    <link rel="stylesheet" href="tvision.css" />
   </head>
-
   <body>
-    <div id="app">
-      <header>
-        <img src="./logo.png" width="80" />
-        <h1>CurveDocs</h1>
-      </header>
-      <main>
-        <ul class="feature-list">
-          <li class="feature">
-            <a href="https://docs.curve.fi/references/whitepapers/dao/">
-              <h2>DAO</h2>
-              <p>
-                Curve DAO is a decentralized governance entity that manages and guides the evolution of the Curve platform, ensuring its growth, security, and integration within the broader DeFi ecosystem
-              </p>
-            </a>
-          </li>
-          <li class="feature">
-            <a href="https://docs.curve.fi/stableswap_exchange/overview/">
-              <h2>Stableswap</h2>
-              <p>
-                A highly efficient Automated Market Making Algorithm for multiple pegged assets utilizing the Stableswap invariant.
-              </p>
-            </a>
-          </li>
-          <li class="feature">
-            <a href="https://docs.curve.fi/references/whitepapers/cryptoswap/">
-              <h2>Cryptoswap</h2>
-              <p>
-                Automated Market Making Algorithm for multiple volatile assets.
-              </p>
-            </a>
-          </li>
-          <li class="feature">
-            <a href="https://docs.curve.fi/LLAMMA/overview/">
-              <h2>$crvUSD</h2>
-              <p>
-                Curve Stablecoin using crypto-tokenized collaterals. Liquidations are
-                supported by LLAMMA (Lending Liquidation AMM Algorithm).
-              </p>
-            </a>
-          </li>
-          <li class="feature">
-            <a
-              href="https://docs.curve.fi/curve_dao/LiquidityGaugesAndMinting/overview/"
-            >
-              <h2>Gauges</h2>
-              <p>
-                Gauges serve as a mechanism to incentivize and reward liquidity provision based on liquidity provided and the community's governance decisions.
-              </p>
-            </a>
-          </li>
-          <li class="feature">
-            <a href="https://docs.curve.fi/factory/overview/">
-              <h2>Pool Factory</h2>
-              <p>
-                Permissionless deployment of Curve liquidity pools and gauges.
-              </p>
-            </a>
-          </li>
-          <li class="feature">
-            <a
-              href="https://docs.curve.fi/curve_dao/FeeCollection%26Distribution/overview/"
-            >
-              <h2>Fee Collection and Distribution</h2>
-              <p>
-                Exchange contracts can charge an admin fee, which is converted
-                to 3CRV and forwarded into a fee distributor contract, a process
-                known as "burning". Fees are then distributed to veCRV holders.
-              </p>
-            </a>
-          </li>
-        </li>
-        <li class="feature">
-          <a
-            href="https://docs.curve.fi/curve_dao/evm-sidechains/overview/"
-          >
-            <h2>Cross Chain</h2>
-            <p>
-              todo
-            </p>
-          </a>
-        </li>
-        </ul>
-      </main>
-      <footer>
-        <ul>
-          <li>
-            <a target="_blank" href="https://docs.curve.fi">Documentation</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://resources.curve.fi">Resources</a
-            >
-          </li>
-          <li>
-            <a target="_blank" href="https://curve.fi">Curve.fi</a
-            >
-          </li>
-        </ul>
-      </footer>
+    <div class="top-menu-bar">
+      <a href="https://curve.fi/">Curve.fi</a>
+      <a href="https://docs.curve.fi/">Technical Docs</a>
+      <a href="https://resources.curve.fi/">Resources</a>
+      <a href="">Notebooks</a>
     </div>
+    <div id="screen">
+        <div class="blue window">
+            <h1><img src="images/lama.png" alt="Logo" style="height: 1.5em; vertical-align: middle;"> Curve Knowledge Hub</h1>
+        </div>
+        <div class="error window half-width info" id="error-window"></div>
+    </div>
+    
 
-    <script src="src/index.js"></script>
+        <div class="window white add-liquidity">
+            <fieldset>
+                <legend> Welcome to the Curve Knowledge Hub!</legend>
+                <p>
+            Your one-stop destination for navigating the dynamic world of Curve Finance. Here, we're dedicated to demystifying the Curve ecosystem, offering you a seamless gateway to a wealth of resources. Whether you're a beginner or a seasoned user, our hub connects you to:
+        </p>
+        <ul>
+            <li>
+                <strong> In-Depth Technical Documentation</strong>: Delve into comprehensive guides and articles, unraveling the complexities of Curve Finance and its smart contracts.
+            </li>
+            <li>
+                <strong> Expertly Curated Resources</strong>: Access a curated list of essential tools, updates, and references to keep you informed and ahead in the Curve landscape.
+            </li>
+            <li>
+                <strong> Data Analysis Notebooks</strong>: Explore interactive notebooks that offer valuable insights and data-driven analysis, empowering your decision-making in the Curve ecosystem.
+            </li>
+        </ul>
+        <p>
+            Our goal is simple: to provide easy, user-friendly access to vital information, aiding your journey through Curve Finance. Whether you're seeking to understand the basics or looking for advanced technical insights, our Knowledge Hub is your trusted guide.
+        </p>
+            </fieldset>
+
+            <p style="text-align: center">
+                <a href="https://docs.curve.fi" style="text-decoration: none; color: inherit;">
+                    <button>Dive In</button>
+                </a>
+            </p>
+            
+        </div>
+    </div>
+    <footer class="footer">
+        <a href="https://twitter.com/CurveFinance" target="_blank">
+            <img src="images/square-x-twitter.svg" alt="Twitter" style="height: 1.5em;">
+        </a>
+        <a href="https://t.me/curvefi" target="_blank">
+            <img src="images/telegram.svg" alt="Telegram" style="height: 1.5em;">
+        </a>
+        <a href="https://discord.gg/twUngQYz85" target="_blank">
+            <img src="images/discord.svg" alt="Discord" style="height: 1.5em;">
+        </a>
+        <a href="https://github.com/curvefi" target="_blank">
+            <img src="images/github.svg" alt="Github" style="height: 1.5em;">
+        </a>
+    </footer>
   </body>
 </html>
